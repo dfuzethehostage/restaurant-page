@@ -1,0 +1,15 @@
+{
+  "name": "git_test",
+  "version": "1.0.0",
+  "description": "My first GitHub repo!\r Hello Odin!",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  }
+}

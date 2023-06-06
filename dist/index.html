@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* header */
+      body {
+        background: #ebe3e3;
+        padding-top: 2rem;
+        padding-inline: 10rem;
+        margin: 0;
+        display: grid;
+        justify-content: center;
+        overflow-x: hidden;
+        font-family: sans-serif;
+      }
+      header {
+        background: black;
+        background-size: 50%;
+        background-position: right;
+        height: 450px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: fit-content;
+        place-content: center;
+        gap: 1rem;
+      }
+      header img {
+        width: 100%;
+        object-fit: contain;
+        margin-left: auto;
+      }
+      h1 {
+        font-size: 7vw;
+        color: white;
+        place-self: center;
+      }
+      nav {
+        padding-block: 1rem;
+        display: flex;
+        height: 3rem;
+        gap: 1rem;
+        grid-column: 1/3;
+        padding-inline: 1rem;
+      }
+      nav p {
+        background: #6c5f3d;
+        margin: 0;
+        flex: 1;
+        display: grid;
+        place-content: center;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+        transition: background 0.1s ease-in-out;
+      }
+      nav p:hover {
+        background: #543b23;
+      }
+      /* content */
+
+      #content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        background: #7c6f6f;
+        padding-block: 2rem;
+        padding-inline: 5vw;
+      }
+      /* Home */
+      img {
+        margin-inline: auto;
+        border-radius: 0.5rem;
+        width: clamp(7rem, 60%, 20rem);
+      }
+
+      ul {
+        grid-row: 1/3;
+      }
+
+      ul li {
+        margin-block: 3rem;
+        font-size: 1.5vw;
+      }
+      /* Contacts */
+      #contacts {
+        justify-self: center;
+        grid-column: 1/3;
+        width: fit-content;
+      }
+      #contacts h2 {
+        font-size: 2.2rem;
+        margin-bottom: 0;
+      }
+      #contacts p {
+        margin-block: 1rem;
+        font-size: 1.5rem;
+      }
+      .contact {
+        padding: 1rem;
+        margin-bottom: 2rem;
+        background: rgb(34, 34, 34);
+        color: aliceblue;
+        border-radius: 1rem;
+        box-shadow: 3px 3px 10px rgb(60, 59, 62);
+        display: flex;
+      }
+
+      .profile-pic {
+        height: 130px;
+        aspect-ratio: 1/1;
+        margin-block: auto;
+        border-radius: 50%;
+        margin-inline: 3rem;
+      }
+
+      #alfred {
+        background: url(/dist/fotos/profilbild-deabb511-62e9-4582-bd2c-0a11ac10ef4b.webp)
+          no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      #helga {
+        background: url(/dist/fotos/images.jpeg);
+        background-position: center;
+        background-size: cover;
+      }
+      #bernd {
+        background: url(/dist/fotos/th.webp);
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Restaurant</h1>
+      <img
+        src="\dist\fotos\834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg"
+        alt=""
+      />
+
+      <nav>
+        <p id="home">Home</p>
+        <p id="contact">Contacts</p>
+        <p id="menu">Menu</p>
+      </nav>
+    </header>
+
+    <div id="content"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
